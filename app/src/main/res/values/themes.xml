@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Planner" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.ct037" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/lime_300</item>
         <item name="colorSecondary">@color/lime_950</item>
@@ -10,5 +10,5 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="Theme.Planner" parent="Base.Theme.Planner" />
+    <style name="Theme.ct037" parent="Base.Theme.ct037" />
 </resources>

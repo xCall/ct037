@@ -3,6 +3,7 @@ agp = "8.9.1"
 kotlin = "2.0.21"
 coreKtx = "1.16.0"
 appcompat = "1.7.0"
+material = "1.12.0"
 composeBom = "2024.09.00"
 tvFoundation = "1.0.0-alpha07"
 tvMaterial = "1.0.0-alpha07"
@@ -26,6 +27,7 @@ androidx-tv-foundation = { group = "androidx.tv", name = "tv-foundation", versio
 androidx-tv-material = { group = "androidx.tv", name = "tv-material", version.ref = "tvMaterial" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

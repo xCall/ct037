@@ -3,36 +3,114 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/home"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.HomeFragment">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/xs_4dp"
+        android:backgroundTint="@color/yellow_400"
+        android:contentDescription="@string/botao_de_settings"
+        android:insetLeft="0dp"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        app:cornerRadius="30dp"
+        app:icon="@drawable/settings"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconSize="@dimen/xxxm_48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
         android:layout_width="@dimen/xhuge_256dp"
         android:layout_height="@dimen/xhuge_256dp"
+        android:contentDescription="@string/imagem_logo"
+        android:src="@drawable/ctlogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/imagem_logo"
-            android:src="@drawable/ctlogo" />
-    </androidx.cardview.widget.CardView>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvClockText"
+        style="@style/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Title"
-        android:text="00:00"
-        android:fontFamily="@font/orbitron"
-        android:textSize="60sp"
+        android:fontFamily="@font/orbitron_semibold"
+        android:text="@string/texto_padrao_timer"
+        android:textColor="@color/black"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <LinearLayout
+        android:id="@+id/llBtnHelpers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvClockText">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/xs_4dp"
+            app:cornerRadius="30dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:backgroundTint="@color/yellow_400"
+            android:contentDescription="@string/botao_de_start"
+            app:icon="@drawable/play"
+            app:iconSize="@dimen/xxxm_48dp"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:padding="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/xs_4dp"
+            app:cornerRadius="30dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:backgroundTint="@color/yellow_400"
+            android:contentDescription="@string/botao_de_pause"
+            app:icon="@drawable/pause"
+            app:iconSize="@dimen/xxxm_48dp"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:padding="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/xs_4dp"
+            app:cornerRadius="30dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:insetLeft="0dp"
+            android:insetRight="0dp"
+            android:backgroundTint="@color/yellow_400"
+            android:contentDescription="@string/botao_de_reset"
+            app:icon="@drawable/restart"
+            app:iconSize="@dimen/xxxm_48dp"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            android:padding="0dp"/>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

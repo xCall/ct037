@@ -16,4 +16,7 @@
     <color name="zinc_800">#27272A</color>
     <color name="zinc_900">#18181B</color>
     <color name="zinc_950">#09090B</color>
+
+    <!-- Yellow Color -->
+    <color name="yellow_400">#FCD202</color>
 </resources>
