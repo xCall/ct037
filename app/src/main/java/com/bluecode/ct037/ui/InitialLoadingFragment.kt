@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.bluecode.ct037.R
 import com.bluecode.ct037.databinding.FragmentInitialLoadingBinding
 import kotlinx.coroutines.delay
@@ -14,6 +15,8 @@ import kotlinx.coroutines.launch
 class InitialLoadingFragment : Fragment() {
     private var _binding: FragmentInitialLoadingBinding? = null
     private val binding get() = _binding!!
+    private val navController by lazy { findNavController() }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,8 +29,8 @@ class InitialLoadingFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding){
             lifecycleScope.launch {
-                delay(1_500)
-                //navController.navigate(R.id.action_initialLoadingFragment)
+                delay(2_500)
+                navController.navigate(R.id.action_initialLoadingFragment_to_homeFragment)
             }
         }
     }

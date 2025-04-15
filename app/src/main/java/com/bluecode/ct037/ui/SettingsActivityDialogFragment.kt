@@ -5,34 +5,30 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import com.bluecode.ct037.R
-import com.bluecode.ct037.databinding.FragmentHomeBinding
+import com.bluecode.ct037.databinding.FragmentSettingsActivityDialogBinding
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class HomeFragment : Fragment() {
-    private var _binding: FragmentHomeBinding? =null
+class SettingsActivityDialogFragment : BottomSheetDialogFragment() {
+    private var _binding : FragmentSettingsActivityDialogBinding? = null
     private val binding get() = _binding!!
-    private val navController by lazy {findNavController()}
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentSettingsActivityDialogBinding.inflate(inflater,container,false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        with(binding) {
-            btnOpenSettings.setOnClickListener{
-                SettingsActivityDialogFragment().show(
-                    childFragmentManager,
-                    SettingsActivityDialogFragment.TAG
-                )
-            }
-        }
+        with(binding){}
+    }
+
+    companion object {
+        const val TAG = "SettingsActivityDialogFragment"
     }
 
     override fun onDestroyView() {

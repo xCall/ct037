@@ -11,12 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-
+        app:navGraph="@navigation/main_nav_graph"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
-    <!-- app:navGraph="@navigation/main_nav_graph"
-
-        android:name="androidx.navigation.fragment.NavHostFragment"-->
 </androidx.constraintlayout.widget.ConstraintLayout>

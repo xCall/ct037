@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/xhuge_256dp"
+    android:layout_height="match_parent"
+    android:padding="@dimen/md_16dp"
+    android:background="@color/zinc_800"
+    tools:context=".ui.SettingsActivityDialogFragment">
+
+    <LinearLayout
+        android:id="@+id/llSettingsActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:id="@+id/llBtnHelpers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="@dimen/xs_4dp"
+                android:backgroundTint="@color/yellow_400"
+                android:contentDescription="@string/botao_de_arrow_back"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:padding="0dp"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/arrow_back"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                app:iconSize="24dp" />
+
+            <TextView
+                android:id="@+id/tvSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/title_settings"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvLabelTimeForRest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sm_8dp"
+            android:text="@string/texto_tempo_descanso"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilInputTimeForRest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xm_32dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelTimeForRest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietValueTimeForRest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_hint_input"
+                android:textColor="@color/zinc_700"
+                android:textColorHint="@color/zinc_50"
+                android:inputType="number"
+                android:textSize="10sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvLabelAverageFightTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sm_8dp"
+            android:text="@string/texto_tempo_medio_luta"
+            android:textColor="@color/white"
+            android:textSize="11sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilInputAverageFightTime"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xm_32dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelTimeForRest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tietValueAverageFightTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/texto_hint_input"
+                android:textColor="@color/zinc_700"
+                android:textColorHint="@color/zinc_50"
+                android:inputType="number"
+                android:textSize="10sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow_400"
+        android:textColor="@color/black"
+        android:text="@string/texto_input_save"
+        app:layout_constraintBottom_toBottomOf="@+id/llSettingsActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

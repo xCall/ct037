@@ -5,8 +5,11 @@
     <string name="botao_de_pause">Botão de pausar timer!</string>
     <string name="botao_de_reset">Botão de reiniciar timer!</string>
     <string name="botao_de_settings">Botão de configuração timer!</string>
+    <string name="botao_de_arrow_back">Botão de voltar para tela inicial!</string>
+    <string name="title_settings">Configurações</string>
     <string name="texto_padrao_timer">00:00</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="texto_tempo_descanso">Tempo para descanso</string>
+    <string name="texto_tempo_medio_luta">Tempo para luta</string>
+    <string name="texto_hint_input">Digite aqui seu valor...</string>
+    <string name="texto_input_save">Salvar</string>
 </resources>

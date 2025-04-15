@@ -9,6 +9,7 @@
     tools:context=".ui.HomeFragment">
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOpenSettings"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_margin="@dimen/xs_4dp"
