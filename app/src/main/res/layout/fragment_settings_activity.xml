@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="@dimen/xhuge_256dp"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/md_16dp"
     android:background="@color/zinc_800"
-    tools:context=".ui.SettingsActivityDialogFragment">
+    android:id="@+id/settingsHome"
+    tools:context=".ui.SettingsActivityFragment">
 
     <LinearLayout
         android:id="@+id/llSettingsActivity"
@@ -27,6 +27,7 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/bntBackToHome"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_margin="@dimen/xs_4dp"

@@ -6,29 +6,32 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.bluecode.ct037.R
-import com.bluecode.ct037.databinding.FragmentSettingsActivityDialogBinding
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.bluecode.ct037.databinding.FragmentSettingsActivityBinding
 
-class SettingsActivityDialogFragment : BottomSheetDialogFragment() {
-    private var _binding : FragmentSettingsActivityDialogBinding? = null
+class SettingsActivityFragment : Fragment() {
+
+    private var _binding : FragmentSettingsActivityBinding? = null
     private val binding get() = _binding!!
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSettingsActivityDialogBinding.inflate(inflater,container,false)
+
+        _binding = FragmentSettingsActivityBinding.inflate(inflater,container,false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        with(binding){}
-    }
-
-    companion object {
-        const val TAG = "SettingsActivityDialogFragment"
+        with(binding) {
+            bntBackToHome.setOnClickListener{
+                parentFragmentManager.beginTransaction().replace(R.id.settingsHome, HomeFragment()).commit()
+            }
+        }
     }
 
     override fun onDestroyView() {
@@ -36,5 +39,6 @@ class SettingsActivityDialogFragment : BottomSheetDialogFragment() {
 
         _binding = null
     }
+
 
 }

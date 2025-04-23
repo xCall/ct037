@@ -14,4 +14,5 @@
     <dimen name="xxxl_96dp">96dp</dimen>
     <dimen name="huge_128dp">128dp</dimen>
     <dimen name="xhuge_256dp">256dp</dimen>
+    <dimen name="xxhuge_256dp">512dp</dimen>
 </resources>
