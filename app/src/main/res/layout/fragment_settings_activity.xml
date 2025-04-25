@@ -69,21 +69,26 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilInputTimeForRest"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/xm_32dp"
-            android:textColor="@color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvLabelTimeForRest">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="filled"
+            app:boxBackgroundColor="@color/zinc_900"
+            app:boxStrokeColor="@color/yellow_400"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tietValueTimeForRest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/texto_hint_input"
-                android:textColor="@color/zinc_700"
-                android:textColorHint="@color/zinc_50"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/zinc_400"
                 android:inputType="number"
-                android:textSize="10sp"/>
-
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:hint="@string/texto_hint_input"/>
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <TextView
             android:id="@+id/tvLabelAverageFightTime"
@@ -97,21 +102,26 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tilInputAverageFightTime"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/xm_32dp"
-            android:textColor="@color/white"
-            app:layout_constraintTop_toBottomOf="@id/tvLabelTimeForRest">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:boxBackgroundMode="filled"
+            app:boxBackgroundColor="@color/zinc_900"
+            app:boxStrokeColor="@color/yellow_400"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tietValueAverageFightTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/texto_hint_input"
-                android:textColor="@color/zinc_700"
-                android:textColorHint="@color/zinc_50"
+                android:padding="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/zinc_400"
                 android:inputType="number"
-                android:textSize="10sp"/>
-
+                android:textSize="18sp"
+                android:background="@android:color/transparent"
+                android:hint="@string/texto_hint_input"/>
         </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
