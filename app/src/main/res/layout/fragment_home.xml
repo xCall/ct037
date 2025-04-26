@@ -10,8 +10,8 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnOpenSettings"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="@dimen/xl_60dp"
+        android:layout_height="@dimen/xl_60dp"
         android:layout_margin="@dimen/xs_4dp"
         android:backgroundTint="@color/yellow_400"
         android:contentDescription="@string/botao_de_settings"
@@ -62,10 +62,10 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/xl_60dp"
+            android:layout_height="@dimen/xl_60dp"
             android:layout_margin="@dimen/xs_4dp"
-            app:cornerRadius="30dp"
+            app:cornerRadius="@dimen/xm_30dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:insetLeft="0dp"
@@ -79,10 +79,10 @@
             android:padding="0dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/xl_60dp"
+            android:layout_height="@dimen/xl_60dp"
             android:layout_margin="@dimen/xs_4dp"
-            app:cornerRadius="30dp"
+            app:cornerRadius="@dimen/xm_30dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:insetLeft="0dp"
@@ -96,10 +96,10 @@
             android:padding="0dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/xl_60dp"
+            android:layout_height="@dimen/xl_60dp"
             android:layout_margin="@dimen/xs_4dp"
-            app:cornerRadius="30dp"
+            app:cornerRadius="@dimen/xm_30dp"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:insetLeft="0dp"
@@ -113,4 +113,17 @@
             android:padding="0dp"/>
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/tvUtcClockText"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/orbitron_semibold"
+        android:text="00:00"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_marginBottom="@dimen/xm_32dp"
+        android:layout_marginEnd="@dimen/md_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
